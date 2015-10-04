@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tccii.fernando.tccii_agentsmonitoring.RulesCreation"
+    android:id="@+id/sensorsListLayour">
+
+
+   <!-- <ListView
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:id="@+id/listSensors"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+
+        android:choiceMode="multipleChoice" />-->
+
+    <tccii.fernando.tccii_agentsmonitoring.MultiSpinner
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:id="@+id/listSensors"
+        >
+
+    </tccii.fernando.tccii_agentsmonitoring.MultiSpinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        >
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/backRulesBtn" />
+
+        <Button
+            android:layout_width="174dp"
+            android:layout_height="match_parent"
+            android:text="Monitor"
+            android:id="@+id/monitorBtn" />
+
+    </LinearLayout>
+
+</LinearLayout>
