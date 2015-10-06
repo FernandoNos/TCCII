@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	h1= title
+	p Configure o controlador
+	form(name="controllerCreation", action="/controller/createController",method="post")
+		p Nome 
+		input(type="text", name="nome_controlador")
+		p IP Central
+		input(type="text", name="ip_central")
+		br
+		br
+		input(type="submit",value="Envia")
